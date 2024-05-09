@@ -7,7 +7,7 @@ const cartData = [
     id: 1,
     image: "/assets/img/katsu.png",
     title: "Katsu",
-    extra: ["Cheese", "Extra Hot"],
+    extra: ["Cheese", "Extra Spicy"],
     total: 1,
     price: 40000,
   },

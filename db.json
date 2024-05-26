@@ -1,0 +1,333 @@
+{
+  "menus": [
+    {
+      "id": 1,
+      "image": "/assets/img/katsu.png",
+      "title": "Rice Bowl Katsu",
+      "price": 15000,
+      "category": "makanan",
+      "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+      "extras": [
+        {
+          "id": 1,
+          "name": "Telur Dadar",
+          "price": 5000
+        },
+        {
+          "id": 2,
+          "name": "Kerupuk",
+          "price": 3000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "/assets/img/tamago.png",
+      "title": "Rice Bowl Tamago",
+      "price": 20000,
+      "category": "makanan",
+      "desc": "Rice Bowl Tamago merupakan perpaduan nasi khas jepang dengan telur dadar yang lembut disertai saos khas jepang yang gurih dan nikmat.",
+      "extras": [
+        {
+          "id": 1,
+          "name": "Kerupuk",
+          "price": 3000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "/assets/img/coffee.png",
+      "title": "Ice Kopi Susu",
+      "price": 10000,
+      "category": "minuman",
+      "desc": "Es Kopi Susu merupakan minuman kopi yang disajikan dengan susu kental manis dan es batu. Minuman ini sangat cocok dinikmati saat cuaca panas.",
+      "extras": [
+        {
+          "id": 1,
+          "name": "Gula",
+          "price": 2000
+        },
+        {
+          "id": 2,
+          "name": "Es",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "/assets/img/americano.png",
+      "title": "Ice Americano",
+      "price": 10000,
+      "category": "minuman",
+      "desc": "Ice Americano merupakan minuman kopi yang disajikan dengan es batu. Minuman ini memiliki rasa yang kuat dan kaya, cocok untuk kamu yang menyukai kopi hitam.",
+      "extras": [
+        {
+          "id": 1,
+          "name": "Gula",
+          "price": 2000
+        },
+        {
+          "id": 2,
+          "name": "Es",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image": "/assets/img/dory.png",
+      "title": "Rice Bowl Dory",
+      "price": 20000,
+      "category": "makanan",
+      "desc": "Rice bowl dory merupakan perpaduan nasi khas jepang dengan potongan dory yang digoreng renyah disertai saos khas jepang yang gurih dan nikmat.",
+      "extras": [
+        {
+          "id": 1,
+          "name": "Kerupuk",
+          "price": 3000
+        }
+      ]
+    }
+  ],
+  "checkout": [
+    {
+      "id": "5eb9",
+      "date": "2024-05-25T23:34:47.601Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 1,
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "5206",
+      "date": "2024-05-25T23:35:36.232Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 1,
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "0948",
+      "date": "2024-05-25T23:48:49.806Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 1,
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "0ebf",
+      "date": "2024-05-25T23:52:48.851Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 1,
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "dcae",
+      "date": "2024-05-25T23:55:09.715Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 1,
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "4630",
+      "date": "2024-05-25T23:58:00.939Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 1,
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "043c",
+      "date": "2024-05-25T23:58:28.311Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 1,
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "ac75",
+      "date": "2024-05-26T00:05:37.807Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 1,
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "82e4",
+      "date": "2024-05-26T00:07:34.146Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 1,
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "9c6a",
+      "date": "2024-05-26T00:16:07.956Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 2,
+            "image": "/assets/img/tamago.png",
+            "title": "Rice Bowl Tamago",
+            "price": 20000,
+            "desc": "Rice Bowl Tamago merupakan perpaduan nasi khas jepang dengan telur dadar yang lembut disertai saos khas jepang yang gurih dan nikmat.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "3bd4",
+      "date": "2024-05-26T00:18:14.414Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 4,
+            "image": "/assets/img/americano.png",
+            "title": "Ice Americano",
+            "price": 10000,
+            "desc": "Ice Americano merupakan minuman kopi yang disajikan dengan es batu. Minuman ini memiliki rasa yang kuat dan kaya, cocok untuk kamu yang menyukai kopi hitam.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "f78f",
+      "date": "2024-05-26T00:18:55.508Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": 2,
+            "image": "/assets/img/tamago.png",
+            "title": "Rice Bowl Tamago",
+            "price": 20000,
+            "desc": "Rice Bowl Tamago merupakan perpaduan nasi khas jepang dengan telur dadar yang lembut disertai saos khas jepang yang gurih dan nikmat.",
+            "extras": []
+          },
+          "quantity": 1
+        },
+        {
+          "menu": {
+            "id": 3,
+            "image": "/assets/img/coffee.png",
+            "title": "Ice Kopi Susu",
+            "price": 10000,
+            "desc": "Es Kopi Susu merupakan minuman kopi yang disajikan dengan susu kental manis dan es batu. Minuman ini sangat cocok dinikmati saat cuaca panas.",
+            "extras": []
+          },
+          "quantity": 2
+        },
+        {
+          "menu": {
+            "id": 4,
+            "image": "/assets/img/americano.png",
+            "title": "Ice Americano",
+            "price": 10000,
+            "desc": "Ice Americano merupakan minuman kopi yang disajikan dengan es batu. Minuman ini memiliki rasa yang kuat dan kaya, cocok untuk kamu yang menyukai kopi hitam.",
+            "extras": []
+          },
+          "quantity": 1
+        },
+        {
+          "menu": {
+            "id": 1,
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    }
+  ]
+}

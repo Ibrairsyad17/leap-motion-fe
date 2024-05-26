@@ -1,28 +1,32 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Menu } from "@/interfaces";
+import { AddToCartButton } from "./AddToCartButton";
+import { Button } from "@/components/ui/button";
 
 interface CardItemProps {
-  id: number;
-  image: string;
-  title: string;
-  price: number;
+  menu: Menu;
 }
 
-const CardItem = ({ id, image, title, price }: CardItemProps) => {
+const CardItem = (props: CardItemProps) => {
   return (
-    <div className="flex flex-col justify-between hover:scale-105 hover:shadow transition duration-300 py-8 shadow-sm items-center rounded-xl">
-      <Link href={`/foods/${id}`}>
+    <div className="flex w-[21rem] flex-shrink-0 flex-col px-6 justify-between hover:shadow-lg transition duration-300 py-8 shadow-sm items-center rounded-xl space-y-3">
+      <Link href={`/foods/${props.menu.id}`}>
         <Image
-          src={image}
-          alt={title}
-          width={500}
-          height={500}
-          className="w-[180px] h-auto"
+          src={props.menu.image}
+          alt={props.menu.title}
+          width={1000}
+          height={1000}
+          className="w-[230px] h-auto"
         />
       </Link>
-      <h1 className="text-lg font-medium">{title}</h1>
-      <p className="text-muted-foreground">Rp. {price}, -</p>
+      <h1 className="text-lg font-medium">{props.menu.title}</h1>
+      <p className="text-muted-foreground">Rp. {props.menu.price}, -</p>
+      <Button className="w-full items-center" size="lg" variant="outline">
+        Lihat Selengkapnya
+      </Button>
+      <AddToCartButton menu={props.menu} />
     </div>
   );
 };

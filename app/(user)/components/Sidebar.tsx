@@ -5,9 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { CupSoda, Home, ShoppingCart, Utensils } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useAppSelector } from "@/redux/store";
+import { totalCartItemsSelector } from "@/redux/slices/cartSlice";
 
 const Sidebar = () => {
   const pathname = usePathname();
+  const totalItems = useAppSelector(totalCartItemsSelector);
   return (
     <>
       <div className="sticky top-0 inset-x-0 z-20 bg-white border-y px-4 sm:px-6 md:px-8 lg:hidden">
@@ -26,8 +29,8 @@ const Sidebar = () => {
                 <path
                   d="M5 1L10.6869 7.16086C10.8637 7.35239 10.8637 7.64761 10.6869 7.83914L5 14"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 />
               </svg>
             </li>
@@ -43,7 +46,7 @@ const Sidebar = () => {
 
       <div
         id="application-sidebar"
-        className="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform w-[260px] hidden fixed inset-y-0 start-0 z-[60] bg-white border-gray-200 lg:block lg:translate-x-0 lg:end-auto lg:bottom-0"
+        className="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform w-[260px] hidden fixed inset-y-0 start-0 z-[40] bg-white border-gray-200 lg:block lg:translate-x-0 lg:end-auto lg:bottom-0"
       >
         <nav
           className="hs-accordion-group p-6 w-full flex flex-col flex-wrap"
@@ -56,11 +59,13 @@ const Sidebar = () => {
             height={500}
             className="w-36 h-auto mx-auto mt-3 mb-6"
           />
-          <ul className="space-y-7 w-7/12 mx-auto py-4 rounded-lg">
+          <ul className="space-y-7 w-8/12 mx-auto py-7 rounded-lg shadow px-3">
             <li>
               <Link
                 className={`
-                  flex flex-col space-y-3 items-center py-3.5 px-2.5 ${pathname === "/home" && "shadow shadow-red-200"} text-sm text-neutral-700 hover:bg-gray-100 rounded-lg
+                  flex flex-col space-y-3 items-center py-3.5 px-2.5 ${
+                    pathname === "/home" && "bg-red-50 hover:bg-red-50"
+                  } text-sm text-neutral-700  rounded-lg hover:bg-red-50
                 `}
                 href="/home"
               >
@@ -74,7 +79,9 @@ const Sidebar = () => {
             <li>
               <Link
                 className={`
-                  flex flex-col space-y-3 items-center py-3.5 px-2.5 text-sm ${pathname === "/foods" && "shadow"} text-neutral-700 rounded-lg hover:bg-gray-100
+                  flex flex-col space-y-3 items-center py-3.5 px-2.5 text-sm ${
+                    pathname === "/foods" && "bg-amber-50 hover:bg-amber-50"
+                  } text-neutral-700 rounded-lg hover:bg-amber-50
                 `}
                 href="/foods"
               >
@@ -88,7 +95,9 @@ const Sidebar = () => {
             <li>
               <Link
                 className={`
-                  flex flex-col text-center space-y-3 items-center ${pathname === "/drinks" && "shadow"} py-3.5 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100
+                  flex flex-col text-center space-y-3 items-center ${
+                    pathname === "/drinks" && "bg-blue-50 hover:bg-blue-50"
+                  } py-3.5 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-blue-50
                 `}
                 href="/drinks"
               >
@@ -103,16 +112,24 @@ const Sidebar = () => {
             </li>
             <li>
               <Link
-                className={`
-                  flex flex-col text-center space-y-3 items-center py-3.5 px-2.5 ${pathname === "/cart" && "shadow"} text-sm text-neutral-700 rounded-lg hover:bg-gray-100
-                `}
                 href="/cart"
+                className={`relative flex flex-col ${
+                  pathname === "/cart" && "bg-green-50 hover:bg-green-50"
+                } py-3.5 px-2.5 justify-center items-center text-sm font-semibold rounded-lg bg-white text-gray-800 disabled:opacity-50 disabled:pointer-events-none hover:bg-green-50`}
               >
                 <ShoppingCart
                   className="font-light w-14 h-14 text-green-500"
                   strokeWidth={0.75}
                 />
                 <span className="font-semibold text-green-500">Keranjang</span>
+                {!!totalItems && (
+                  <span
+                    key={totalItems}
+                    className="absolute top-0 end-0 inline-flex items-center py-1 px-2.5 rounded-full text-xs font-medium transform -translate-y-1/4 translate-x-1/4 bg-red-500 text-white animate-ping-effect"
+                  >
+                    {totalItems}
+                  </span>
+                )}
               </Link>
             </li>
           </ul>

@@ -1,6 +1,8 @@
+"use client";
 import { Inter } from "next/font/google";
 import Sidebar from "@/app/(user)/components/Sidebar";
 import PrelineScript from "@/app/components/PrelineScript";
+import { StoreProvider } from "../components/StoreProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,8 +14,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Sidebar />
-        {children}
+        <StoreProvider>
+          <Sidebar />
+          {children}
+        </StoreProvider>
       </body>
       <PrelineScript />
     </html>

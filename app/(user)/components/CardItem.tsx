@@ -23,8 +23,13 @@ const CardItem = (props: CardItemProps) => {
       </Link>
       <h1 className="text-lg font-medium">{props.menu.title}</h1>
       <p className="text-muted-foreground">Rp. {props.menu.price}, -</p>
-      <Button className="w-full items-center" size="lg" variant="outline">
-        Lihat Selengkapnya
+      <Button
+        className="w-full items-center"
+        size="lg"
+        variant="outline"
+        asChild
+      >
+        <Link href={`/foods/${props.menu.id}`}>Lihat Selengkapnya</Link>
       </Button>
       <AddToCartButton menu={props.menu} />
     </div>

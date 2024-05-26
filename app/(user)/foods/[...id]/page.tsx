@@ -52,7 +52,7 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
   );
 
   const quantity = useAppSelector((state) =>
-    menuQuantitySelector(state, item.id)
+    menuQuantitySelector(state, findThisItem?.menu.id ?? 0)
   );
 
   return (

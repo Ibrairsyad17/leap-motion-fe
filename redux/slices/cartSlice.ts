@@ -1,4 +1,4 @@
-import { CartItem, Menu } from "@/interfaces";
+import { CartItem, Extra, Menu } from "@/interfaces";
 import { PayloadAction, createSelector, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
 
@@ -45,6 +45,14 @@ export const cartSlice = createSlice({
     resetCart: (state) => {
       state.cartItems = [];
     },
+    updateExtrasInCartItem: (state, action: PayloadAction<Menu>) => {
+      const existingItem = state.cartItems.find(
+        (item) => item.menu.id === action.payload.id
+      );
+      if (existingItem) {
+        existingItem.menu.extras = action.payload.extras;
+      }
+    },
   },
 });
 
@@ -66,6 +74,11 @@ export const menuQuantitySelector = createSelector(
     cartItems.find((item) => item.menu.id === menuId)?.quantity
 );
 
-export const { addToCart, removeFromCart, deleteFromCart, resetCart } =
-  cartSlice.actions;
+export const {
+  addToCart,
+  removeFromCart,
+  deleteFromCart,
+  resetCart,
+  updateExtrasInCartItem,
+} = cartSlice.actions;
 export default cartSlice.reducer;

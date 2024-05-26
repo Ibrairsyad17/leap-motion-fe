@@ -1,7 +1,7 @@
 {
   "menus": [
     {
-      "id": 1,
+      "id": "1",
       "image": "/assets/img/katsu.png",
       "title": "Rice Bowl Katsu",
       "price": 15000,
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "image": "/assets/img/tamago.png",
       "title": "Rice Bowl Tamago",
       "price": 20000,
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "image": "/assets/img/coffee.png",
       "title": "Ice Kopi Susu",
       "price": 10000,
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "image": "/assets/img/americano.png",
       "title": "Ice Americano",
       "price": 10000,
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "image": "/assets/img/dory.png",
       "title": "Rice Bowl Dory",
       "price": 20000,
@@ -326,6 +326,35 @@
             "extras": []
           },
           "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "cbce",
+      "date": "2024-05-26T08:11:34.018Z",
+      "cartItems": [
+        {
+          "menu": {
+            "id": "1",
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "category": "makanan",
+            "price": 23000,
+            "extras": [
+              {
+                "id": 1,
+                "name": "Telur Dadar",
+                "price": 5000
+              },
+              {
+                "id": 2,
+                "name": "Kerupuk",
+                "price": 3000
+              }
+            ]
+          },
+          "quantity": 1
         }
       ]
     }

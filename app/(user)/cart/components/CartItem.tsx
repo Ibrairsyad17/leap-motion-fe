@@ -48,13 +48,13 @@ const CartItemList = ({ cartItem }: CartItemProps) => {
         Rp. {cartItem.quantity * cartItem.menu.price}, -
       </span>
       <div className="flex space-x-3 items-center">
-        {/* <Button
+        <Button
           size="lg"
           className="hover:bg-yellow-500 shadow-none bg-white border border-yellow-500 text-yellow-500 hover:text-white"
           asChild
         >
           <Link href={`/foods/${cartItem.menu.id}`}>Ubah</Link>
-        </Button> */}
+        </Button>
         <Button
           size="lg"
           variant="destructive"

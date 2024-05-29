@@ -1545,6 +1545,164 @@
           "quantity": 1
         }
       ]
+    },
+    {
+      "id": "cdbd",
+      "date": "2024-05-29T16:06:00.441Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "1",
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "category": "makanan",
+            "price": 15000,
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "6012",
+      "date": "2024-05-29T16:06:08.552Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "1",
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "category": "makanan",
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "ce5e",
+      "date": "2024-05-29T16:06:17.032Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "2",
+            "image": "/assets/img/tamago.png",
+            "title": "Rice Bowl Tamago",
+            "price": 20000,
+            "category": "makanan",
+            "desc": "Rice Bowl Tamago merupakan perpaduan nasi khas jepang dengan telur dadar yang lembut disertai saos khas jepang yang gurih dan nikmat.",
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "6020",
+      "date": "2024-05-29T16:10:49.866Z",
+      "sequenceId": 1,
+      "cartItems": []
+    },
+    {
+      "id": "ec8e",
+      "date": "2024-05-29T16:14:50.167Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "1",
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "category": "makanan",
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "a4c9",
+      "date": "2024-05-29T16:14:56.237Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "1",
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "category": "makanan",
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "a7e4",
+      "date": "2024-05-29T16:15:06.310Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "1",
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "category": "makanan",
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "a4e3",
+      "date": "2024-05-29T16:15:23.814Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "2",
+            "image": "/assets/img/tamago.png",
+            "title": "Rice Bowl Tamago",
+            "price": 20000,
+            "category": "makanan",
+            "desc": "Rice Bowl Tamago merupakan perpaduan nasi khas jepang dengan telur dadar yang lembut disertai saos khas jepang yang gurih dan nikmat.",
+            "extras": []
+          },
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "f0f9",
+      "date": "2024-05-29T16:15:40.055Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "2",
+            "image": "/assets/img/tamago.png",
+            "title": "Rice Bowl Tamago",
+            "price": 20000,
+            "category": "makanan",
+            "desc": "Rice Bowl Tamago merupakan perpaduan nasi khas jepang dengan telur dadar yang lembut disertai saos khas jepang yang gurih dan nikmat.",
+            "extras": []
+          },
+          "quantity": 4
+        }
+      ]
     }
   ]
 }

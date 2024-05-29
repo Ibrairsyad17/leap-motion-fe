@@ -57,7 +57,7 @@ export const CheckoutDialog = ({ totalPrice }: CheckoutDialogProps) => {
     try {
       const response = await axios.post(
         "http://localhost:5000/checkout",
-        dataToPost,
+        dataToPost
       );
 
       console.log("Checkout data:", response.data);
@@ -72,7 +72,7 @@ export const CheckoutDialog = ({ totalPrice }: CheckoutDialogProps) => {
       const data = response.data;
       const dataToday = data.filter(
         (item: any) =>
-          new Date(item.date).toDateString() === new Date().toDateString(),
+          new Date(item.date).toDateString() === new Date().toDateString()
       );
 
       if (data.length === 0) {
@@ -97,11 +97,12 @@ export const CheckoutDialog = ({ totalPrice }: CheckoutDialogProps) => {
   return (
     <Dialog>
       <DialogTrigger
-        className="h-full text-xl w-full bg-black text-white rounded-lg"
+        className="h-full text-xl w-full bg-black text-white rounded-lg disabled:bg-gray-500 disabled:cursor-not-allowed"
         onClick={async () => {
           handleCheckout();
           getLatestData();
         }}
+        disabled={cartItems.length === 0 ? true : false}
       >
         Checkout
       </DialogTrigger>

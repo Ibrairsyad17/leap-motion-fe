@@ -20,6 +20,36 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Step Installation and Configuration JSON-SERVER Configuration
+
+Install all dependency packages:
+
+```bash
+npm install
+```
+
+Install json-server globally first:
+
+```bash
+npm i -g json-server
+```
+
+Or
+
+Install json-server locally:
+
+```bash
+npm i json-server
+#or
+npx json-server --watch db.json
+```
+
+Run the json-server
+
+```bash
+json-server --watch db.json -p 5000
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

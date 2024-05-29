@@ -1482,6 +1482,69 @@
           "quantity": 2
         }
       ]
+    },
+    {
+      "id": "516a",
+      "date": "2024-05-29T15:57:56.803Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "1",
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "category": "makanan",
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "33a0",
+      "date": "2024-05-29T15:58:08.111Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "1",
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "category": "makanan",
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "6f93",
+      "date": "2024-05-29T16:03:52.260Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "3",
+            "image": "/assets/img/coffee.png",
+            "title": "Ice Kopi Susu",
+            "desc": "Es Kopi Susu merupakan minuman kopi yang disajikan dengan susu kental manis dan es batu. Minuman ini sangat cocok dinikmati saat cuaca panas.",
+            "category": "minuman",
+            "price": 12000,
+            "extras": [
+              {
+                "id": 1,
+                "name": "Gula",
+                "price": 2000
+              }
+            ]
+          },
+          "quantity": 1
+        }
+      ]
     }
   ]
 }

@@ -1,35 +1,15 @@
 "use client";
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Menu } from "@/interfaces";
 import { useAppDispatch, useAppSelector } from "@/redux/store";
 import CartItemList from "@/app/(user)/cart/components/CartItem";
 import { resetCart, totalCartPriceSelector } from "@/redux/slices/cartSlice";
-import axios from "axios";
-import { Check } from "lucide-react";
 import { CheckoutDialog } from "./components/CheckoutDialog";
 
 const CartPage = () => {
   const cartItems = useAppSelector((state) => state.cart.cartItems);
   const totalCartPrice = useAppSelector(totalCartPriceSelector);
   const dispatch = useAppDispatch();
-
-  const handleCheckout = async () => {
-    const dataToPost = {
-      date: new Date().toISOString(),
-      cartItems: cartItems,
-    };
-    // Implement this function
-    try {
-      const response = await axios.post(
-        "http://localhost:5000/checkout",
-        dataToPost
-      );
-      console.log(response);
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   return (
     <div className="w-full pt-10 px-4 sm:px-6 md:px-8 lg:ps-72 flex flex-col justify-between h-screen">
@@ -60,7 +40,7 @@ const CartPage = () => {
         >
           Batal
         </Button>
-        <CheckoutDialog />
+        <CheckoutDialog totalPrice={totalCartPrice} />
       </div>
     </div>
   );

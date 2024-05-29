@@ -1545,6 +1545,25 @@
           "quantity": 1
         }
       ]
+    },
+    {
+      "id": "dc98",
+      "date": "2024-05-29T16:28:57.374Z",
+      "sequenceId": 1,
+      "cartItems": [
+        {
+          "menu": {
+            "id": "1",
+            "image": "/assets/img/katsu.png",
+            "title": "Rice Bowl Katsu",
+            "price": 15000,
+            "category": "makanan",
+            "desc": "Rice Bowl Katsu merupakan perpaduan nasi khas jepang dengan potongan dada ayam tanpa tulang disertai baluran saos khas katsu dengan butiran wijen dikemas secara praktis.",
+            "extras": []
+          },
+          "quantity": 1
+        }
+      ]
     }
   ]
 }

@@ -23,6 +23,7 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
   const [disabled, setDisabled] = React.useState(false);
   const dispatch = useAppDispatch();
 
+  
   React.useEffect(() => {
     const fetchFood = async () => {
       const response = await axios.get(

@@ -13,8 +13,10 @@ import {
 } from "@/redux/slices/cartSlice";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const DetailsFood = ({ params }: { params: { id: string } }) => {
+  const router = useRouter();
   const [food, setFood] = React.useState<Menu>();
   const cartItems = useAppSelector((state) => state.cart.cartItems);
   const [selectedExtras, setSelectedExtras] = React.useState<Extra[]>([]);
@@ -153,7 +155,7 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
         </div>
       </div>
       <div className="grid grid-cols-2 py-5 h-28 gap-5">
-        {disabled ? (
+        {findThisItem && (
           <Button
             onClick={() => dispatch(deleteFromCart(item))}
             className="h-full text-xl"
@@ -161,11 +163,14 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
           >
             Batalkan
           </Button>
-        ) : (
+        )}
+
+        {!findThisItem && (
           <Button
             onClick={() => {
               dispatch(addToCart(item));
               setDisabled(true);
+              router.push("/home");
             }}
             className="h-full text-xl"
             variant="outline"

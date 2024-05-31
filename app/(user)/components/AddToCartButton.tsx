@@ -27,7 +27,7 @@ export const AddToCartButton = (props: AddToCartButtonProps) => {
   if (!quantity) {
     return (
       <Button
-        className="w-full items-center bg-amber-500 hover:bg-amber-600"
+        className="w-full items-center py-6 bg-amber-500 hover:bg-amber-600"
         size="lg"
         onClick={() => dispatch(addToCart(noExtraMenu))}
       >

@@ -13,7 +13,7 @@ export const CounterItem = (props: CounterItemProps) => {
   return (
     <div className="grid grid-cols-3 gap-2">
       <Button
-        className="col-span-1"
+        className="col-span-1 py-6"
         {...(props.type === "cart" && { variant: "outline" })}
         {...(props.type === "menu" && { variant: "destructive" })}
         onClick={props.onRemove}
@@ -24,7 +24,7 @@ export const CounterItem = (props: CounterItemProps) => {
       <span className="w-full font-medium text-lg rounded-lg inline-flex justify-center items-center">
         {props.quantity}
       </span>
-      <Button className="w-full" size="lg" onClick={props.onAdd}>
+      <Button className="w-full py-6" size="lg" onClick={props.onAdd}>
         Tambah
       </Button>
     </div>

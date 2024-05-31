@@ -53,10 +53,11 @@ export const CheckoutDialog = ({ totalPrice }: CheckoutDialogProps) => {
       sequenceId: sequenceId,
       cartItems: cartItems,
     };
+
     // Implement this function
     try {
       const response = await axios.post(
-        "http://localhost:5000/checkout",
+        "https://leap-motion-json-server.vercel.app/checkout",
         dataToPost
       );
 
@@ -68,7 +69,9 @@ export const CheckoutDialog = ({ totalPrice }: CheckoutDialogProps) => {
 
   const getLatestData = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/checkout");
+      const response = await axios.get(
+        "https://leap-motion-json-server.vercel.app/checkout"
+      );
       const data = response.data;
       const dataToday = data.filter(
         (item: any) =>
@@ -124,13 +127,13 @@ export const CheckoutDialog = ({ totalPrice }: CheckoutDialogProps) => {
               </p>
               <p className="my-2 text-lg">Kode Pemesanan:</p>
               <span className="text-3xl font-medium">
-                {dataCheckout?.sequenceId}
+                {dataCheckout?.sequenceId + 1}
               </span>
               <div className="flex justify-start self-start mt-4">
                 <p className="text-sm font-semibold mt-2">Detail Pesanan:</p>
               </div>
               <div className="space-y-3 mt-2 flex flex-col w-full">
-                {dataCheckout?.cartItems.map((item: any, index) => {
+                {cartItems.map((item: any, index) => {
                   const { menu, quantity } = item;
 
                   return (

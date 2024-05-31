@@ -1,11 +1,14 @@
-"use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import PrelineScript from "@/app/components/PrelineScript";
-import { StoreProvider } from "./components/StoreProvider";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Leap Motion | Vocafe",
+  description: "Leap Motion",
+};
 
 export default function RootLayout({
   children,
@@ -14,10 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <StoreProvider>
-        <body className={inter.className}>{children}</body>
-        <PrelineScript />
-      </StoreProvider>
+      <body className={inter.className}>{children}</body>
+      <PrelineScript />
     </html>
   );
 }

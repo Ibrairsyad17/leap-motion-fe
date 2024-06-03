@@ -98,6 +98,7 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
                     Tambahkan extra topping pilih satu atau lebih (opsional):
                   </p>
                 </div>
+                <div className="grid grid-cols-2 space-y-4">
                 {food?.extras.map((extra: Extra) => (
                   <div key={extra.id} className="flex space-y-8 space-x-4 items-center">
                     <input
@@ -121,6 +122,7 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
                     htmlFor={extra.name}>{extra.name}</label>
                   </div>
                 ))}
+                  </div>
               </div>
             </div>
           </div>

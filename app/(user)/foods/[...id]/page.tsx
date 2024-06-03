@@ -157,7 +157,7 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
           </span>
         </div>
       </div>
-      <div className="grid grid-cols-2 py-5 h-28 gap-5">
+      <div className="grid grid-cols-2 h-28 gap-5">
         {findThisItem && (
           <Button
             onClick={() => dispatch(deleteFromCart(item))}

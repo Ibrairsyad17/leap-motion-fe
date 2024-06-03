@@ -99,10 +99,10 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
                   </p>
                 </div>
                 {food?.extras.map((extra: Extra) => (
-                  <div key={extra.id} className="flex space-x-4 items-center">
+                  <div key={extra.id} className="flex space-y-8 space-x-4 items-center">
                     <input
                       type="checkbox"
-                      className="w-7 h-7"
+                      className="w-10 h-10  mt-8"
                       name={extra.name}
                       id={extra.name}
                       onChange={(e) => {
@@ -117,7 +117,8 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
                         }
                       }}
                     />
-                    <label htmlFor={extra.name}>{extra.name}</label>
+                    <label 
+                    htmlFor={extra.name}>{extra.name}</label>
                   </div>
                 ))}
               </div>
@@ -180,7 +181,7 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
         )}
 
         <Button className="h-full text-xl" asChild>
-          <Link href="/cart">Checkout</Link>
+          <Link href="/cart">Simpan</Link>
         </Button>
       </div>
     </div>

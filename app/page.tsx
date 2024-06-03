@@ -102,16 +102,14 @@ const Home = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white relative overflow-hidden">
       <div className="relative w-full max-w-2xl p-2 z-10">
-
         <iframe
           className="w-full h-64 sm:h-96 rounded-lg shadow-xl mt-[-30px]" 
-          src="https://www.youtube.com/embed/-Kh8pMTr_hI?si"
+          src="https://www.youtube.com/embed/tCLmmTk4S90?si"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-
         <div className="mt-6 flex justify-center">
           <h1 className="text-white mt-4 font-bold text-4xl text-center">Selamat Datang di Vocafe!</h1>
         </div>

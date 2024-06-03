@@ -28,7 +28,12 @@ const DrinksPage = () => {
   }, []);
 
   const noExtraMenu = listMenu.map((menu) => (menu = { ...menu, extras: [] }));
-  const filteredMenu = noExtraMenu;
+  const filteredMenu = noExtraMenu.filter(
+    (menu) => menu.category === "minuman"
+  );
+
+  // const noExtraMenu = listMenu.map((menu) => (menu = { ...menu, extras: [] }));
+  // const filteredMenu = noExtraMenu;
 
   return (
     <div className="w-full pt-10 px-4 sm:px-6 md:px-8 lg:ps-72 flex flex-col space-y-7">

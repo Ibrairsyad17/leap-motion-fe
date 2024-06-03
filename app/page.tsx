@@ -104,7 +104,7 @@ const Home = () => {
       <div className="relative w-full max-w-2xl p-2 z-10">
 
         <iframe
-          className="w-full h-64 sm:h-96 rounded-lg shadow-xl mt-[-30px]" // Adjust the margin-top to move it upwards
+          className="w-full h-64 sm:h-96 rounded-lg shadow-xl mt-[-30px]" 
           src="https://www.youtube.com/embed/-Kh8pMTr_hI?si"
           title="YouTube video player"
           frameBorder="0"
@@ -117,7 +117,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col space-y-3 items-center">
           <Link href="/home">
-            <div className="mt-8 bg-yellow-400 py-4 px-8 text-sm text-neutral-700 rounded-full hover:bg-yellow-600 cursor-pointer">
+          <div className="mt-8 bg-gradient-to-r from-amber-500 to-amber-300 py-4 px-8 text-sm text-neutral-700 rounded-full cursor-pointer transition-all duration-300 hover:from-amber-600 hover:to-amber-400">
               <span className="font-sm text-xl text-white">Mulai</span>
             </div>
           </Link>

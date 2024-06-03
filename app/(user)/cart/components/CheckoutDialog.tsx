@@ -107,7 +107,7 @@ export const CheckoutDialog = ({ totalPrice }: CheckoutDialogProps) => {
         }}
         disabled={cartItems.length === 0 ? true : false}
       >
-        Checkout
+        Ya, Saya Yakin
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
@@ -169,7 +169,7 @@ export const CheckoutDialog = ({ totalPrice }: CheckoutDialogProps) => {
             className="w-full py-4 px-4 bg-black text-lg text-white rounded-lg"
             onClick={() => {
               dispatch(resetCart());
-              router.push(`/home`);
+              router.push(`/`);
             }}
           >
             Tutup

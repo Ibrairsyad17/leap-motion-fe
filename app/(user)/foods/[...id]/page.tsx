@@ -58,10 +58,10 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
   );
 
   return (
-    <div className="w-full h-screen overflow-y-hidden pt-10 px-4 sm:px-6 md:px-8 lg:ps-72 flex flex-col justify-between space-y-7">
+    <div className="w-full h-screen overflow-y-hidden py-5 px-4 sm:px-6 md:px-8 lg:ps-72 flex flex-col justify-between space-y-7">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-semibold mb-2">{foodMenu?.title}</h1>
+          <h1 className="text-3xl font-semibold mt-4">{foodMenu?.title}</h1>
           <p className="text-muted-foreground">
             Detail menu makanan dari {foodMenu?.title}
           </p>

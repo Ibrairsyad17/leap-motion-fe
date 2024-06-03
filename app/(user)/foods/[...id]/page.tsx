@@ -161,7 +161,7 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
         {findThisItem && (
           <Button
             onClick={() => dispatch(deleteFromCart(item))}
-            className="h-full text-xl"
+            className="h-full text-lg"
             variant="outline"
           >
             Batalkan
@@ -175,14 +175,14 @@ const DetailsFood = ({ params }: { params: { id: string } }) => {
               setDisabled(true);
               router.push("/home");
             }}
-            className="h-full text-xl"
+            className="h-full text-lg"
             variant="outline"
           >
             Tambahkan ke Keranjang
           </Button>
         )}
 
-        <Button className="h-full text-xl" asChild>
+        <Button className="h-full text-lg" asChild>
           <Link href="/cart">Simpan</Link>
         </Button>
       </div>

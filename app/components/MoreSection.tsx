@@ -10,27 +10,27 @@ import Image from "next/image";
 
 const carouselImages = [
   {
-    src: "/assets/img/image-1.jpg",
+    src: "/assets/img/image-1.JPG",
     alt: "image-1",
   },
   {
-    src: "/assets/img/image-2.jpg",
+    src: "/assets/img/image-2.JPG",
     alt: "image-2",
   },
   {
-    src: "/assets/img/image-3.jpg",
+    src: "/assets/img/image-3.JPG",
     alt: "image-3",
   },
   {
-    src: "/assets/img/image-4.jpg",
+    src: "/assets/img/image-4.JPG",
     alt: "image-4",
   },
   {
-    src: "/assets/img/image-5.jpg",
+    src: "/assets/img/image-5.JPG",
     alt: "image-5",
   },
   {
-    src: "/assets/img/image-6.jpg",
+    src: "/assets/img/image-6.JPG",
     alt: "image-6",
   },
 ];

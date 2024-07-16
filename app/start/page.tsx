@@ -63,7 +63,7 @@ const Home = () => {
           </span>
         </Link>
         <p className="text-xs text-center text-gray-600">
-          We're part of Vocational Faculty Brawijaya
+          We{"'"}re part of Vocational Faculty Brawijaya
         </p>
         <p className="text-xs text-center text-gray-600">
           © Provoks Community 2024. Made with ❤️ by Provoks Teams

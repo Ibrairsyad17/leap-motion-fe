@@ -70,7 +70,8 @@ const HomePage = () => {
           <span className="text-xl font-medium">Swipe</span>
         </div>
         <span className="text-xl font-medium inline-flex space-x-5">
-          Swipe for more menu <ArrowRightIcon size={32} className="mx-5" />
+          Swipe to see other menus
+          <ArrowRightIcon size={32} className="mx-5" />
         </span>
       </div>
     </div>

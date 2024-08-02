@@ -33,9 +33,9 @@ const HomePage = () => {
     <div className="w-full pt-10 px-4 sm:px-6 md:px-8 lg:ps-72 flex flex-col space-y-5">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-semibold mb-2">Menu Rekomendasi</h1>
+          <h1 className="text-3xl font-semibold mb-2">Recommended Menu</h1>
           <p className="text-muted-foreground">
-            Menu rekomendasi untuk kamu nikmati di Vocafe
+            Recommended menu for you to enjoy at Vocafe
           </p>
         </div>
         <CartNotificationBadge />

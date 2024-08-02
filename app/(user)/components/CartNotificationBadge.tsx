@@ -14,7 +14,7 @@ const CartNotificationBadge = () => {
       className="inline-flex items-center font-medium rounded-lg text-sm bg-green-100 text-green-500 shadow-sm hover:bg-green-100 disabled:opacity-50 py-2.5 px-4"
     >
       <ShoppingCart size={18} className="mr-4" />
-      Keranjang Kamu
+      Cart
       {!!totalItems && (
         <span
           key={totalItems}

@@ -32,7 +32,7 @@ const CardItem = (props: CardItemProps) => {
           variant="outline"
           asChild
         >
-          <Link href={`/foods/${props.menu.id}`}>Lihat Selengkapnya</Link>
+          <Link href={`/foods/${props.menu.id}`}>See More</Link>
         </Button>
         <AddToCartButton menu={props.menu} />
       </div>

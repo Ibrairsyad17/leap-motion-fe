@@ -73,7 +73,7 @@ const Sidebar = () => {
                   className="font-light w-14 h-14 text-red-500"
                   strokeWidth={0.75}
                 />
-                <span className="font-semibold text-red-500">Beranda</span>
+                <span className="font-semibold text-red-500">Home</span>
               </Link>
             </li>
             <li>
@@ -89,7 +89,7 @@ const Sidebar = () => {
                   className="font-light w-14 h-14 text-amber-500"
                   strokeWidth={0.75}
                 />
-                <span className="font-semibold text-amber-500">Makanan</span>
+                <span className="font-semibold text-amber-500">Foods</span>
               </Link>
             </li>
             <li>
@@ -105,9 +105,7 @@ const Sidebar = () => {
                   className="font-light w-14 h-14 text-blue-500"
                   strokeWidth={0.75}
                 />
-                <span className="font-semibold text-blue-500">
-                  Menu Minuman
-                </span>
+                <span className="font-semibold text-blue-500">Beverages</span>
               </Link>
             </li>
             <li>
@@ -121,7 +119,7 @@ const Sidebar = () => {
                   className="font-light w-14 h-14 text-green-500"
                   strokeWidth={0.75}
                 />
-                <span className="font-semibold text-green-500">Keranjang</span>
+                <span className="font-semibold text-green-500">Cart</span>
                 {!!totalItems && (
                   <span
                     key={totalItems}

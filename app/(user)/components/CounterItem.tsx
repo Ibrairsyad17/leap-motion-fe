@@ -25,7 +25,7 @@ export const CounterItem = (props: CounterItemProps) => {
         {props.quantity}
       </span>
       <Button className="w-full py-6" size="lg" onClick={props.onAdd}>
-        Tambah
+        Add
       </Button>
     </div>
   );

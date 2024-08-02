@@ -36,9 +36,9 @@ const FoodsPage = () => {
     <div className="w-full pt-10 px-4 sm:px-6 md:px-8 lg:ps-72 flex flex-col space-y-7">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-3xl font-semibold mb-2">Menu Makanan</h1>
+          <h1 className="text-3xl font-semibold mb-2">Foods</h1>
           <p className="text-muted-foreground">
-            Menu makanan untuk kamu nikmati di Vocafe
+            Enjoy a variety of foods at Vocafe
           </p>
         </div>
         <CartNotificationBadge />

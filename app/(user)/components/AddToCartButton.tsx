@@ -32,7 +32,7 @@ export const AddToCartButton = (props: AddToCartButtonProps) => {
         onClick={() => dispatch(addToCart(noExtraMenu))}
       >
         <ShoppingCart size={16} className="mr-2" />
-        Tambah Ke Keranjang
+        Add to Cart
       </Button>
     );
   }

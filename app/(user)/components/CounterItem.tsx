@@ -19,7 +19,7 @@ export const CounterItem = (props: CounterItemProps) => {
         onClick={props.onRemove}
         size="lg"
       >
-        {props.quantity === 1 ? "Hapus" : "Kurang"}
+        {props.quantity === 1 ? "Remove" : "Subtract"}
       </Button>
       <span className="w-full font-medium text-lg rounded-lg inline-flex justify-center items-center">
         {props.quantity}
